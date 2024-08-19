@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A.I. Image Generator | Indra Ajit</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>A.I. Image Generator</h1>
+        <p>Write your prompt here to generate images with power of Ai,For example: "Best Quality, Masterpiece, Exteremly
+            Detailed, High Resolution, 4K, Ultra High Resolution, Detailed Shadows,(Underground cave filled with
+            crystals, glowing lights, reflective surfaces, fantasy environment, high detail)</p>
+        <form id="gen-form" onsubmit="event.preventDefault()">
+            <input type="text" id="user-prompt" placeholder="Describe you want see..." autocomplete="off">
+            <button id="generate">Generate</button>
+        </form>
+        <div class="result">
+            <div id="loading">Generating...</div>
+            <div id="image-grid"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

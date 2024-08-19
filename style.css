@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #221f2f;
+}
+
+.container {
+  position: relative;
+  width: 40rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+#gen-form {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 80%;
+  background: transparent;
+  border: 1px solid #999;
+  outline: none;
+  color: #fff;
+  padding-left: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+input:hover,
+input:focus {
+  border: 1px solid #675afe;
+}
+
+button {
+  width: 20%;
+  background: transparent;
+  color: #ccc;
+  border: 1px solid #999;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #675afe;
+}
+
+#loading {
+  display: none;
+  margin-bottom: 1rem;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999;
+  background: #ccc;
+  color: #666;
+  cursor: auto;
+}
+
+.result {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#image-grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#image-grid img {
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#image-grid img:hover {
+  border-color: #675afe;
+}
+
+@media screen and (max-width: 768px) {
+  #gen-form button {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
